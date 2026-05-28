@@ -3,6 +3,7 @@ const express = require('require');
 require('dotenv').config();
 
 const quadraRoutes = require('./routes/quadraRoutes');
+const reservaRoutes = require('./routes/reservaRoutes');
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 
 // Vincula as rotas de quadras com o prefixo /api
 app.use('/api', quadraRoutes);
+app.use('/api', reservaRoutes);
 
 // Rota de teste inicial para garantir que a API está viva
 app.get('/api/status', (req, res) => {
