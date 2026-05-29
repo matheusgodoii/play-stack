@@ -1,6 +1,5 @@
 const express = require('express');
-const express = require('require');
-require('dotenv').config();
+   require('dotenv').config();
 
 const quadraRoutes = require('./routes/quadraRoutes');
 const reservaRoutes = require('./routes/reservaRoutes');
